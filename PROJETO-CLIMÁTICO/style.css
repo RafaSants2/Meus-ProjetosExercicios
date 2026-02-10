@@ -42,20 +42,46 @@ main article#header {
 }
 
 #header > #buscador {
-    
+    position: relative;
 }
 
-#buscador #icons {
+#buscador #icon-location {
+    color: black;
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#buscador #icon-x {
     color: black;
     cursor: pointer;
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+}
+
+#buscador #icon-search {
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3px;
 }
 
 #buscador input[type="search"] {
     outline: none;
     border: 1px solid lightgrey;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 15px;
+    padding-left: 20px;
+    padding-right: 30px;
+    
 }
 
 article#principal #local-horario {
