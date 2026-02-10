@@ -12,30 +12,60 @@
     <div id="center">
         <main>
             <article id="header">
-                <h1>Clima</h1>
                 <div id="buscador">
                     <i class="fa-solid fa-location-dot" id="icons"></i>
-                    <input type="search" name="" id="buscador">
+                    <input type="search" name="ibuscador" id="buscador">
                     <i class="fa-solid fa-xmark" id="icons"></i>
                     <i class="fa-solid fa-magnifying-glass" id="icons"></i>
                 </div>
             </article>
 
             <article id="principal">
-                <div>Pernambuco</div> <!-- H1 local -->
-                <div>12:33</div> <!-- horario atual-->
+                <div id="local-horario">
+                    <div id="local">Cedro, PE</div> <!-- H1 local -->
+                    <div id="horario">12:33</div> <!-- horario atual-->
+                </div> 
                 <div id="clima">
-                    <img src="img/nublado.png" alt=""> <!--IMG-->
-                    <div>27,3</div> <!--H1 graus-->
-                    <div>nublado</div> <!--PARAGRAFO condição-->
+                    <img src="img/nublado.png" alt="" id="imagem"> <!--IMG-->
+                    <div class="graus-condi">
+                        <div id="graus">29,3°</div> <!--H1 graus-->
+                        <div id="condicao">nublado</div> <!--PARAGRAFO condição-->
+                    </div>
                 </div>
             </article>
 
             <article id="footer">
-                <div></div> <!-- temp. max -->
-                <div></div> <!-- temp. min -->
-                <div></div> <!-- humidade -->
-                <div></div> <!-- vento -->
+                <div class="estatisticas">
+                    <i class="fa-solid fa-temperature-high" id="icons-estat"></i>
+                    <div class="estatistica-coluna">
+                        <p class="esta1">Temp. max</p>
+                        <p class="esta2">29,3°</p>
+                    </div>
+                </div> <!-- temp. max -->
+
+                <div class="estatisticas">
+                    <i class="fa-solid fa-temperature-high" id="icons-estat"></i>
+                    <div class="estatistica-coluna">
+                        <p class="esta1">Temp. min</p>
+                        <p class="esta2">29,3°</p>
+                    </div>
+                </div> <!-- temp. min -->
+
+                <div class="estatisticas">
+                    <i class="fa-solid fa-droplet" id="icons-estat"></i>
+                    <div class="estatistica-coluna">
+                        <p class="esta1">Humidade</p>
+                        <p class="esta2">52%</p>
+                    </div>
+                </div> <!-- humidade -->
+
+                <div class="estatisticas">
+                    <i class="fa-solid fa-wind" id="icons-estat"></i>
+                    <div class="estatistica-coluna">
+                        <p class="esta1">Vento</p>
+                        <p class="esta2">1.4km/h</p>
+                    </div>
+                </div> <!-- vento -->
             </article>
         </main>
     </div>
