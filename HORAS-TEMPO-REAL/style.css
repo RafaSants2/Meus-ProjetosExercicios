@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div#relogio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(177, 177, 177);
+}
+
+.horario {
+    background-color: black;
+    color: red;
+    padding: 10px 40px;
+    font-size: 4.5em;
+    border-radius: 10px;
+    border: 10px solid rgb(23, 23, 24);
+    outline: 3px solid rgb(61, 61, 61);
+    font-family: monospace;
+}
