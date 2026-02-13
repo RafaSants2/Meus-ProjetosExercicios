@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,60 +12,61 @@
     <div id="center">
         <main>
             <article id="header">
-                <div id="buscador">
+                <form id="buscador">
                     <i class="fa-solid fa-location-dot" id="icon-location"></i>
-                    <input type="search" name="ibuscador" id="buscador">
-                    <i class="fa-solid fa-xmark" id="icon-x"></i>
-                    <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
-                </div>
+                    <input type="search" name="ibuscador" id="search" placeholder="Buscar cidade">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
+                    </button>
+                </form>
             </article>
 
-            <article id="principal">
-                <div id="local-horario">
-                    <div id="local">Cedro, PE</div> <!-- H1 local -->
-                    <div id="horario"></div> <!-- horario atual-->
-                </div> 
-                <div id="clima">
-                    <img src="img/nublado.png" alt="" id="imagem"> <!--IMG-->
-                    <div class="graus-condi">
-                        <div id="graus">29,3°</div> <!--H1 graus-->
-                        <div id="condicao">nublado</div> <!--PARAGRAFO condição-->
+            <div id="weather">
+                <article id="principal">
+                    <div id="local-horario">
+                        <div id="local">Cedro, PE</div> <!-- H1 local -->
+                        <div id="horario"></div> <!-- horario atual-->
                     </div>
-                </div>
-            </article>
+                    <div id="clima">
+                        <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" id="temp_imagem"> <!--IMG-->
+                        <div class="graus-condi">
+                            <div id="graus"></div> <!--H1 graus-->
+                            <div id="condicao">nublado</div> <!--PARAGRAFO condição-->
+                        </div>
+                    </div>
+                </article>
+                <article id="footer">
+                    <div class="estatisticas">
+                        <i class="fa-solid fa-temperature-high" id="icons-estat-max"></i>
+                        <div class="estatistica-coluna">
+                            <p class="esta1">Temp. max</p>
+                            <p class="esta2" id="temp_max">29,3°</p>
+                        </div>
+                    </div> <!-- temp. max -->
+                    <div class="estatisticas">
+                        <i class="fa-solid fa-temperature-high" id="icons-estat-min"></i>
+                        <div class="estatistica-coluna">
+                            <p class="esta1" id="temp_min">Temp. min</p>
+                            <p class="esta2">29,3°</p>
+                        </div>
+                    </div> <!-- temp. min -->
+                    <div class="estatisticas">
+                        <i class="fa-solid fa-droplet" id="icons-estat-humi"></i>
+                        <div class="estatistica-coluna">
+                            <p class="esta1">Humidade</p>
+                            <p class="esta2" id="humidity">52%</p>
+                        </div>
+                    </div> <!-- humidade -->
+                    <div class="estatisticas">
+                        <i class="fa-solid fa-wind" id="icons-estat-vento"></i>
+                        <div class="estatistica-coluna">
+                            <p class="esta1">Vento</p>
+                            <p class="esta2">1.4km/h</p>
+                        </div>
+                    </div> <!-- vento -->
+            </div>
 
-            <article id="footer">
-                <div class="estatisticas">
-                    <i class="fa-solid fa-temperature-high" id="icons-estat"></i>
-                    <div class="estatistica-coluna">
-                        <p class="esta1">Temp. max</p>
-                        <p class="esta2">29,3°</p>
-                    </div>
-                </div> <!-- temp. max -->
-
-                <div class="estatisticas">
-                    <i class="fa-solid fa-temperature-high" id="icons-estat"></i>
-                    <div class="estatistica-coluna">
-                        <p class="esta1">Temp. min</p>
-                        <p class="esta2">29,3°</p>
-                    </div>
-                </div> <!-- temp. min -->
-
-                <div class="estatisticas">
-                    <i class="fa-solid fa-droplet" id="icons-estat"></i>
-                    <div class="estatistica-coluna">
-                        <p class="esta1">Humidade</p>
-                        <p class="esta2">52%</p>
-                    </div>
-                </div> <!-- humidade -->
-
-                <div class="estatisticas">
-                    <i class="fa-solid fa-wind" id="icons-estat"></i>
-                    <div class="estatistica-coluna">
-                        <p class="esta1">Vento</p>
-                        <p class="esta2">1.4km/h</p>
-                    </div>
-                </div> <!-- vento -->
+                <div id="alert"></div>
             </article>
         </main>
     </div>

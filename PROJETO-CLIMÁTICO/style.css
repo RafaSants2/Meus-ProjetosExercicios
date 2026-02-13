@@ -7,8 +7,6 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     background-color: var(--fundo-body);
     color: var(--texto-principal);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -36,16 +34,25 @@ main {
     padding: 20px;
 }
 
+#weather.show {
+    display: block;
+}
+
+div#weather {
+    display: none;
+}
+
+
 main article#header {
     display: flex;
     flex-direction: column;
 }
 
-#header > #buscador {
+#header > form#buscador {
     position: relative;
 }
 
-#buscador #icon-location {
+form#buscador #icon-location {
     color: black;
     position: absolute;
 
@@ -53,24 +60,18 @@ main article#header {
     transform: translateY(-50%);
 }
 
-#buscador #icon-x {
-    color: black;
+button[type="submit"] {
+    background-color: transparent; 
+    border: none;   
     cursor: pointer;
     position: absolute;
-
     top: 50%;
     transform: translateY(-50%);
-    right: 25px;
+    right: 5px;
 }
 
-#buscador #icon-search {
-    color: black;
-    cursor: pointer;
-    position: absolute;
-    
-    top: 50%;
-    transform: translateY(-50%);
-    right: 3px;
+button[type="submit"] #icon-search {
+    font-size: 15px;
 }
 
 #buscador input[type="search"] {
@@ -81,7 +82,7 @@ main article#header {
     font-size: 15px;
     padding-left: 20px;
     padding-right: 30px;
-    
+    width: 100%;
 }
 
 article#principal #local-horario {
@@ -90,6 +91,7 @@ article#principal #local-horario {
     flex-direction: column;
     text-align: center;
     gap: 7px;
+    
 }
 
 #local-horario #local {
@@ -114,8 +116,10 @@ div#clima {
     margin-bottom: 20px;
 }
 
-div#clima #imagem {
-    width: 50px;
+div#clima #temp_imagem {
+    width: 90px;
+    
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2)); /*FAZ SOMBRA DE FATO NA IMAGEM*/
 }
 
 div#clima > .graus-condi {
@@ -132,6 +136,7 @@ div#clima > .graus-condi {
 .graus-condi > #condicao {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize; /*INDEPENDENTE DA SITUAÇÃO, SEMPRE DEIXA A PRIMEIRA LETRA EM MAIUSCULA.*/
 }
 
 article#footer {
@@ -157,8 +162,24 @@ article#footer .estatisticas {
     gap: 5px;
 }
 
-.estatisticas #icons-estat {
+.estatisticas #icons-estat-max {
     font-size: 18px;
+    color: rgb(241, 88, 41);
+}
+
+.estatisticas #icons-estat-min {
+    font-size: 18px;
+    color: rgb(0, 162, 255);
+}
+
+.estatisticas #icons-estat-humi {
+    font-size: 18px;
+    color: rgb(0, 195, 255);
+}
+
+.estatisticas #icons-estat-vento {
+    font-size: 18px;
+    color: rgb(191, 96, 235);
 }
 
 .estatisticas .esta1 {
@@ -167,4 +188,8 @@ article#footer .estatisticas {
 
 .estatisticas .esta2 {
     font-size: 0.95em;
+}
+
+#alert {
+    text-align: center;
 }
