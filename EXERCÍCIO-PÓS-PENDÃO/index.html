@@ -24,7 +24,7 @@
 
             <p><strong>Símbolos</strong>: &amp;reg; (&reg;), &amp;copy; (&copy;), &amp;half; (&half;)...</p>
 
-            <p><strong>&lt;/img&gt;</strong>: Tag que permite adicionar imagens de forma interna (tengo a imagem salva) e externa (de um site ou do Google, copiando o endereço de imagem). Alguns sites que <strong>não</strong> possuem direitos autorais: <em>unsplash.com, Pexels.com</em></p>
+            <p><strong>&lt;/img&gt;</strong>: Tag que permite adicionar imagens de forma interna (tendo a imagem salva) e externa (de um site ou do Google, copiando o endereço de imagem). Alguns sites que <strong>não</strong> possuem direitos autorais: <em>unsplash.com, Pexels.com</em></p>
 
             <p><strong>Favicon</strong>: Ícone representante de um site. <br>
             Estrutura: <strong>&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;</strong> </p>
@@ -91,6 +91,28 @@
                     <p>Estoy estudiando <abbr title="HyperText Markup Language">HTML</abbr> y <abbr title="Cascading Style Sheets">CSS</abbr>. </p>
                 </li>
             </ul>
+            <h2>Listas:</h2>
+            <h3>Lista ordenada:</h3>
+            <ol type="1" start="8">
+                <li>
+                    <strong>&lt;/ol&gt;:</strong> Aquelas que a ordem faz diferença. (OBS: posso atribui-lá usando o "<strong>type</strong>" e/ou "<strong>start</strong>", que mostra de qual numeração começará a contagem)
+                </li>
+                <li>
+                    <strong>Itens de lista (&lt;/li&gt;)</strong>: Itens que ficarão dentro da lista (&lt;/ol ou &lt;/ul) criada anteriormente.
+                </li>
+            </ol>
+            <h3>Lista NÃO ordenada:</h3>
+            <ul>
+                <li>
+                    <strong>&lt;/ul&gt;:</strong> Nessa, não faz sentido haver uma sequência, e também se usa dentro dela o &lt;/li&gt;, ademais, é possivel usar o "type" também, colocando essa lista não ordenada com o tipo: <strong>"disc", "circle" e "square"</strong>
+                </li>
+            </ul>
+            <h3>Lista de Definição:</h3>
+            <p>Como se fosse um dicionário, é colocado um termo e em seguida sua definição. Para que seja de definição, se usa <strong>&lt;/dl&gt;</strong> dentro desse DL, coloca-se <strong>&lt;/dt&gt;</strong> que é o termo, e ainda dentro do DL, coloca-se ABAIXO DO DT o <strong>&lt;/dd&gt;</strong>, que é a descrição do respectivo termo. <strong>EXEMPLO</strong>:</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Linguagem de Marcação para a criação do conteúdo de um site.</dd>
+            </dl>
 
 
             
