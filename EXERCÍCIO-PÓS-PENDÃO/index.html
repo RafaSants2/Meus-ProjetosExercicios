@@ -91,6 +91,7 @@
                     <p>Estoy estudiando <abbr title="HyperText Markup Language">HTML</abbr> y <abbr title="Cascading Style Sheets">CSS</abbr>. </p>
                 </li>
             </ul>
+            <hr>
             <h2>Listas:</h2>
             <h3>Lista ordenada:</h3>
             <ol type="1" start="8">
@@ -113,31 +114,34 @@
                 <dt>HTML</dt>
                 <dd>Linguagem de Marcação para a criação do conteúdo de um site.</dd>
             </dl>
+            <hr>
             <h2>Links Internos e Externos:</h2>
             <h3>Link Externo:</h3>
             <p>Link que aponta para outro site (que não é nosso). Usa-se a tag <strong>&lt;/a&gt;</strong>. EXEMPLO: <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank"> Esse site não é meu</a> </p>
             <p><strong>&lt;/a&gt;</strong>: essa tag é chamada de "âncora", e é com ela que podemos criar um link, se usa esse href dentro da tag para mostrar o local onde meu site vai. O <strong>target="_blank"</strong> faz com que o link aberto nos leve a outra página/aba. OBS: lembre-se que o "target" é usado apenas para sites que você quer abrir e que não são seus. </p>
             <h3>Link Interno:</h3>
             <p>Fará ligação com outra página que está dentro do nosso servidor que diz respeito com a nossa página. EXEMPLO: <a href="../HORAS-TEMPO-REAL/index.html" target="_self">Meu site</a></p>
-            
+            <h3>Links para donwload em PDF e compactado em ZIP:</h3>
+            <ul>
+                <li>
+                    <p><strong>PDF:</strong> Para fazer um link para donwload em pdf, se usa a estrutura "<strong>donwload</strong>" (colocando o nome do arquivo que deseja ser instalado) e "<strong>type</strong>" sendo "<strong>application/pdf</strong>".</p>
+                </li>
+                <li>
+                    <p><strong>ZIP:</strong> Mesma coisa, a diferença é que no "<strong>type</strong>" você colocará "<strong>application/zip</strong>"</p>
+                </li>
+            </ul>
+            <hr>
+            <h2>Vídeo:</h2>
+            <p><strong>&lt;/video&gt;</strong>: tag que mostra vídeos. Se você quiser, dentro da tag "video" você pode colocar "<strong>poster</strong>", que serve para colocar uma imagem de thumb para seu vídeo. além disso, pode-se colocar o atributo "<strong>autoplay</strong>" (para reproduzir o vídeo automáticamente) e "<strong>controls</strong>", que serve para fazer o controle de áudio aparecer.
+            </p>
+            <p><strong>&lt;source&gt;:</strong>Se você quer que seja melhor de usar a tag "video", crie essa tag e, dentro dela, a tag "<strong>source</strong>", e dentro da tag "source", use "<strong>src</strong>", que vai ser usado para colocar o vídeo, além disso, coloque na tag source o atributo "<strong>type:video/mp4</strong>" caso o seu vídeo seja no formato <strong>mp4</strong>, claro.</p>
+            <video src="#" controls></video>
+            <hr>
+            <h2>Áudio:</h2>
+            <p><strong>&lt;/audio&gt;</strong>: essa tag que se usa para colocar áudios, nesse caso, o áudio é posto dentro do "<strong>src</strong>" que se encontra na tag "audio", ademais, coloque "<strong>autoplay</strong>" caso queira que comece automáticamente, e "<strong>controls</strong>" para que haja o controle de áudio.</p>
+            <audio src="akak.mp4" controls></audio>
 
-
-            
-
-            
-
-            
-            
-            
-
-            
-            <!-- <p><strong>&lt;/img&gt;</strong>: </p> --> 
-              
-            
         </main>
-        <footer>
-        
-        </footer>
     </div>
 </body>
 </html>
